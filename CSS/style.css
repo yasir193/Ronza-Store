@@ -126,6 +126,9 @@ footer .fa:hover {
   .w-15{
     width: 20%;
   }
+  .paddingSmall{
+    padding: 0px;
+  }
   .imgmargin{
     margin-bottom: 30px;
   }
