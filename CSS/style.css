@@ -1,0 +1,151 @@
+.mainColorBackground{
+  background-color: #F9F1E6;
+}
+.secondColor{
+  color: #F9F1E6;
+}
+.secondColorBackground{
+  background-color: #41210A;
+}
+.mainColor{
+  color: #41210A !important;
+}
+.mainColor:hover{
+  color: #c17a48 !important;
+}
+.w-15{
+  width: 11%;
+}
+.rtl{
+  direction: rtl;
+}
+body{
+  font-family: "Noto Kufi Arabic", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.w-480{
+  width: 350px !important;
+  height: 500px !important;
+  
+}
+h2 {
+  position: relative;
+  display: inline-block; /* Ensures the line is only as wide as the text */
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  text-align: center;
+  color: #41210A;
+}
+h6{
+  color: #41210A;
+}
+img {
+  transition: transform 0.5s ease; /* Apply transition to the base state */
+}
+.dontHover:hover{
+  transform: scale(1);
+}
+
+img:hover {
+  transform: scale(1.1); /* Scale the image when hovered */
+}
+
+.ho {
+  overflow: hidden; /* Ensures the image does not overflow its container */
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px; /* Adjust the width of the line */
+  height: 2px; /* Thickness of the line */
+  background-color: black; /* Color of the line */
+  margin: 8px auto 0; /* Adjust spacing between the text and the line */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+}
+
+h2:hover::after {
+  transform: scaleX(1.4); /* Scales the line to 1.4 times its size */
+}
+h1 {
+  position: relative;
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  text-align: center;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 50px; /* Adjust the width of the line */
+  height: 2px; /* Thickness of the line */
+  background-color: #F9F1E6 ; /* Color of the line */
+  margin: 8px auto 0; /* Adjust spacing between the text and the line */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+}
+
+h1:hover::after {
+  transform: scaleX(2); /* Scales the line to 1.4 times its size */
+}
+/* General Styles for Footer */
+footer {
+  font-size: 1rem;
+  padding: 20px 0;
+}
+
+footer .fa {
+  margin: 0 10px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+footer .fa:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  footer .fa {
+    margin: 5px; /* Reduce spacing between icons on smaller screens */
+  }
+  footer p {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    font-size: 0.9rem; /* Make text slightly smaller for very small screens */
+  }
+  footer .fa {
+    font-size: 1.5rem; /* Reduce icon size on very small screens */
+  }
+}
+/* Responsive Adjustments for Products Section */
+@media (max-width: 768px) {
+  .w-15{
+    width: 20%;
+  }
+  .imgmargin{
+    margin-bottom: 30px;
+  }
+  .w-480 {
+    width: 300px !important;
+    height: 400px !important; /* Maintain aspect ratio */
+  }
+  .ho img {
+    width: 100%; /* Ensure images fit the container */
+  }
+}
+
+@media (max-width: 576px) {
+  h1, h2 {
+    font-size: 1.5rem; /* Smaller titles for smaller screens */
+  }
+  .ho img {
+    height: auto;
+  }
+  .rtl {
+    text-align: center; /* Center align text for smaller screens */
+  }
+}
